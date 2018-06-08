@@ -14,4 +14,4 @@
    This rate is Baud rate which is a common measure of the speed of communication over a data channel.
    For example, 9600 baud means 9600 bits per second. So a clock should be created to sample the data according to the baud rate.
 
-Here is VHDL code and testbench based on Xilinx SPartan-6 to send FIFO data from FPGA to PC.
+Here is VHDL code and testbench based on Xilinx Spartan-6 to send FIFO data from FPGA to PC.
