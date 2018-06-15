@@ -16,8 +16,7 @@
    
 5. ** CLK_baudrate can not be used for the reciever, because when to send information from PC is not decided by the FPGA. It may happen that the data from PC will be sampled at the edge of data itself, which may bring a lot of noise. So the better way is to count the clk based on CLK_100M when you sense data from 1 to 0. Besides in order to sense the middle part of data, first I count half CLK_baudrate and then start to sample the signal every CLK_baudrate.
 
-6. The data loaded inside FIFO is from A to Z. 
-   Push 's' to start the communication, and you will get A to Z automatically on PC.
+6. The data loaded inside FIFO is from A to Z. Push 's' to start communication and A to Z will be shown on PC.
 
 Here is VHDL code and testbench based on Xilinx Spartan-6 to send FIFO data from FPGA to PC.
 
